@@ -22,10 +22,11 @@ public class HelloImpl extends UnicastRemoteObject implements Hello {
 	}
 	
 	@Override
-	public void personTest(Person p) throws RemoteException {
+	public Person personTest(Person p) throws RemoteException {
 		// TODO Auto-generated method stub
 		p.setName("Server");
 		System.out.println(p.getName());
+		return p;
 		
 		
 		//return p.getName();
